@@ -1,0 +1,120 @@
+# ─── PYTHON ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+backend/venv/
+backend/env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# ─── ENVIRONMENT VARIABLES ────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+*.env
+!.env.example
+
+# ─── NODE / REACT ─────────────────────────────────
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+frontend/dist/
+build/
+frontend/build/
+
+# Vite
+.vite/
+
+# ─── API KEYS (EXTRA SAFETY) ──────────────────────
+*.key
+*.pem
+*.secret
+secrets.json
+config.secret.js
+
+# ─── OS FILES ─────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ─── EDITORS ──────────────────────────────────────
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# ─── LOGS ─────────────────────────────────────────
+logs/
+*.log
+log.txt
+
+# ─── MISC ─────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.backup
+.cache/
+tmp/
+temp/
+
+# Uploaded test files
+*.csv
+!frontend/src/sample*.csv
