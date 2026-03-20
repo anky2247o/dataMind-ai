@@ -553,10 +553,10 @@ def analyze():
 
 
 if __name__ == "__main__":
+    import os
     print("\n🚀 DataMind Python Backend")
     print(f"   Matplotlib + Seaborn: ✅ Active")
     print(f"   SciPy: {'✅ Available' if SCIPY_AVAILABLE else '❌ Not installed'}")
-    print(f"   Running on https://datamind-ai.onrender.com\n")
-    import os
+    print(f"   Running on http://localhost:5000\n")
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
