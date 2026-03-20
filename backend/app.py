@@ -556,5 +556,7 @@ if __name__ == "__main__":
     print("\n🚀 DataMind Python Backend")
     print(f"   Matplotlib + Seaborn: ✅ Active")
     print(f"   SciPy: {'✅ Available' if SCIPY_AVAILABLE else '❌ Not installed'}")
-    print(f"   Running on http://localhost:5000\n")
-    app.run(debug=True, port=5000)
+    print(f"   Running on https://datamind-ai.onrender.com\n")
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
