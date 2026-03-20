@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from "react";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://datamind-ai.onrender.com";
 
 const C = {
   bg: "#0A0A0F", panel: "#111118", border: "#1E1E2E",
