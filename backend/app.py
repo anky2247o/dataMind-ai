@@ -559,4 +559,5 @@ if __name__ == "__main__":
     print(f"   SciPy: {'✅ Available' if SCIPY_AVAILABLE else '❌ Not installed'}")
     print(f"   Running on http://localhost:5000\n")
     port = int(os.environ.get("PORT", 5000))
+    print(f"   Running on port {port}\n")
     app.run(host="0.0.0.0", port=port, debug=False)
