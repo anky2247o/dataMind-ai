@@ -471,6 +471,9 @@ def suggest_chart(stats):
 
 
 # ─── ROUTES ───────────────────────────────────────────────────────────────────
+@app.route("/")
+def home():
+    return "Backend is running 🚀"
 
 @app.route("/health", methods=["GET"])
 def health():
