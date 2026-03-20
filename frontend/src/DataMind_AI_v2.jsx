@@ -6,7 +6,7 @@ import {
 } from "recharts";
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const BACKEND_URL = "https://datamind-ai.onrender.com"; // Python Flask backend
+const BACKEND_URL = "https://data-mind-ai.onrender.com"; // Python Flask backend
 const USE_BACKEND = true; // Set false to use Claude API only
 
 const C = {
@@ -363,7 +363,7 @@ export default function DataMindAI() {
   // Check if backend is alive
   const checkBackend = useCallback(async () => {
     try {
-      const res = await fetch(`${BACKEND_URL}/health`, { signal: AbortSignal.timeout(3000) });
+      const res = await fetch(`${BACKEND_URL}/health`, { signal: AbortSignal.timeout(6000) });
       if (res.ok) { setBackendStatus("ok"); return true; }
     } catch { }
     setBackendStatus("down");
