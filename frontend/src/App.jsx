@@ -1,4 +1,4 @@
-import DataMindAI from './DataMind_AI_v3'
+import DataMindAI from './DataMind_AI_v2'
 
 function App() {
   return <DataMindAI />
