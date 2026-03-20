@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 
 const BACKEND_URL = "https://data-mind-ai.onrender.com";
-
+const USE_BACKEND = true; // Set false to use Claude API only
 const C = {
   bg: "#0A0A0F", panel: "#111118", border: "#1E1E2E",
   accent: "#00FFB2", accent2: "#7B61FF", accent3: "#FF6B6B",
